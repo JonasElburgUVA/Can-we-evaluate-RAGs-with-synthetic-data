@@ -1,0 +1,7 @@
+n_source_docs_per_split: 20
+n_questions_per_doc: 5
+questions_splits: 
+  - dev
+corpus_splits:
+  - dev
+  - train

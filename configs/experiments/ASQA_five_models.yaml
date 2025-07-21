@@ -1,0 +1,20 @@
+# the configuration assumes azure openai deployments.
+experiment_name: "five_models"
+dataset_name: "ASQA"
+
+buddies : 
+  - "ASQA_4o_mini"
+  - "ASQA_4o"
+  - "ASQA_3.5"
+  - "ASQA_Llama"
+  - "ASQA_Haiku"
+baseline: "ASQA_4o_mini"
+
+generator_llm_deployment: "gpt-4o"
+num_source_docs: 20
+num_gen_questions_per_document: 5
+generated_dataset_name: "Generated-100"
+
+eval_llm_deployment: "gpt-4o-mini"                    
+eval_embedding_deployment: "text-embedding-3-small"
+metric_group: "full"

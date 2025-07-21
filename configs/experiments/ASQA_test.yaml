@@ -1,0 +1,19 @@
+# the configuration assumes azure openai deployments.
+experiment_name: "context_window_small"
+dataset_name: "ASQA"
+
+buddies : 
+  - "ASQA_4o_mini"
+  - "ASQA_high_context_low_threshold"
+baseline: "ASQA_4o_mini"
+
+generator_llm_deployment: "gpt-4o"
+num_source_docs: 5
+num_gen_questions_per_document: 2
+generated_dataset_name: "generated-10"
+
+eval_llm_deployment: "gpt-4o-mini"                    
+eval_embedding_deployment: "text-embedding-3-small"
+metric_group: "supervised"
+
+use_doc_ids: False

@@ -1,0 +1,21 @@
+experiment_name: "context_window"
+dataset_name: "Sales"
+
+buddies : 
+  - "Sales_low_context" 
+  - "Sales"
+  - "Sales_high_context" 
+  - "Sales_high_context_low_threshold"
+baseline: "Sales"
+
+generator_llm_deployment: "gpt-4o"
+min_source_doc_length: 500
+num_source_docs: 20
+num_gen_questions_per_document: 5
+generated_dataset_name: "Generated-100"
+
+eval_llm_deployment: "gpt-4o-mini"                    
+eval_embedding_deployment: "text-embedding-3-small"
+metric_group: "full"
+
+num_human_questions: 99

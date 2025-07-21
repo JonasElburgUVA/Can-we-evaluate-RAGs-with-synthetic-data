@@ -1,0 +1,25 @@
+{
+  "dataSource": "",
+  "collection": "",
+  "objectId": "9191",
+  "title": "",
+  "chunkingMethod": "SIZE",
+  "chunkSize": 1000,
+  "chunkOverlap": 200,
+  "roles": [
+    {
+      "value": "KnowledgeBuddy:Public"
+    }
+  ],
+  "text": [
+    {
+      "content": "string",
+      "roles": [
+        {
+          "value": "KnowledgeBuddy:Public"
+        }
+      ],
+      "attributes": []
+        }
+      ]
+    }

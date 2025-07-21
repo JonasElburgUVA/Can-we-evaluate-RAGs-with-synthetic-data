@@ -1,0 +1,13 @@
+# the configuration assumes azure openai deployments.
+experiment_name: "example"
+dataset_name: "football"
+
+num_questions: 5
+num_source_docs: 1
+
+buddies : 
+  - "FootballBuddy"
+
+eval_llm_deployment: "gpt-4o-mini"                    
+eval_embedding_deployment: "text-embedding-3-small"
+metric_group: "supervised"

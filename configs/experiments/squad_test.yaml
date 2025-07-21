@@ -1,0 +1,17 @@
+experiment_name: "context_window"
+dataset_name: "SQuAD"
+
+buddies : 
+  - "squad_low_context" 
+  - "squad"
+
+generator_llm_deployment: "gpt-4o"
+num_gen_questions_per_document: 5
+num_source_docs: 1
+generated_dataset_name: "generated-5"
+
+eval_llm_deployment: "gpt-4o-mini"                    
+eval_embedding_deployment: "text-embedding-3-small"
+metric_group: "supervised"
+
+use_doc_ids: True

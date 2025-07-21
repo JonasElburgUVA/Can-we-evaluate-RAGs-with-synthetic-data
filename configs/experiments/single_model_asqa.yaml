@@ -1,0 +1,15 @@
+# the configuration assumes azure openai deployments.
+experiment_name: "single_model"
+dataset_name: "ASQA"
+
+eval_set_name: "human"
+num_questions: 5
+
+buddies : 
+  - "ASQA_low_context" 
+  - "ASQA_4o_mini"
+baseline: "ASQA_4o_mini"
+
+eval_llm_deployment: "gpt-4o-mini"                    
+eval_embedding_deployment: "text-embedding-3-small"
+metric_group: "non_llm"

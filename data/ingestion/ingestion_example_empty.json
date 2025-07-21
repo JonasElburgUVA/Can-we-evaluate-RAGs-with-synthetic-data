@@ -1,0 +1,44 @@
+{
+  "dataSource": "string",
+  "collection": "string",
+  "objectId": "string",
+  "title": "string",
+  "chunkingMethod": "string",
+  "chunkSize": 0,
+  "chunkOverlap": 0,
+  "roles": [
+    {
+      "value": "string"
+    }
+  ],
+  "attributes": [
+    {
+      "name": "string",
+      "values": [
+        {
+          "value": "string"
+        }
+      ]
+    }
+  ],
+  "text": [
+    {
+      "content": "string",
+      "roles": [
+        {
+          "value": "string"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "string",
+          "values": [
+            {
+              "value": "string"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

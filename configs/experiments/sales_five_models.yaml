@@ -1,0 +1,22 @@
+experiment_name: "five_models"
+dataset_name: "Sales"
+
+buddies : 
+- "Sales"
+# - "Sales_4o_unbugged"
+- "Sales_4o"
+- "Sales_3.5"
+- "Sales_Haiku"
+baseline: "Sales"
+
+generator_llm_deployment: "gpt-4o"
+num_source_docs: 20
+min_source_doc_length: 500
+num_gen_questions_per_document: 5
+generated_dataset_name: "Generated-100"
+
+eval_llm_deployment: "gpt-4o-mini"                    
+eval_embedding_deployment: "text-embedding-3-small"
+metric_group: "full"
+
+num_human_questions: 99

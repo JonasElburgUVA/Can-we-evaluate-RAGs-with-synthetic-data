@@ -1,0 +1,22 @@
+# the configuration assumes azure openai deployments.
+experiment_name: "five_models"
+dataset_name: "SQuAD"
+
+buddies : 
+  - "squad"
+  - "squad_4o"
+  - "squad_3.5"
+  - "squad_Llama"
+  - "squad_Haiku"
+baseline: "squad"
+
+generator_llm_deployment: "gpt-4o"
+num_source_docs: 20
+num_gen_questions_per_document: 5
+generated_dataset_name: "Generated-100"
+
+eval_llm_deployment: "gpt-4o-mini"                    
+eval_embedding_deployment: "text-embedding-3-small"
+metric_group: "full"
+
+use_doc_ids: True
