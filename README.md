@@ -6,7 +6,7 @@ The primary purpose of this research was to evaluate the reliability of a synthe
 
 1. Preprocessing
 
-The preprocessing step serves to format the corpus and human-curated benchmark in easy to use json files. For instructions on the preprocessing of your own data, refer to [this notebook](https://github.com/JonasElburgUVA/Can-we-evaluate-RAGs-with-synthetic-data/blob/main/Experiments/preprocessing/pp_template.ipynb).
+The preprocessing step serves to format the corpus and human-curated benchmark in easy to use json files. For instructions on the preprocessing of your own data, refer to [this notebook](https://github.com/JonasElburgUVA/Can-we-evaluate-RAGs-with-synthetic-data/blob/master/Experiments/preprocessing/pp_template.ipynb).
 
 2. Ingestion
 
@@ -14,7 +14,7 @@ In the ingestion step, the corpus is uploaded, chunked, and tokenized, after whi
 
 3. Inference
 
-After ingesting data, you specify your experiment arguments in a [config](#config) file. After having specified identifiers, buddies, deployments, and evaluation metrics in this file, the inference notebook carries out the main part of the experiments. First, we make predictions on the human-curated benchmark using the specified set of buddies. Then we do the same for the synthetic benchmark. Evaluation metrics are calculated for all buddy-benchmark combinations.
+After ingesting data, you specify your experiment arguments in a config file. After having specified identifiers, buddies, deployments, and evaluation metrics in this file, the inference notebook carries out the main part of the experiments. First, we make predictions on the human-curated benchmark using the specified set of buddies. Then we do the same for the synthetic benchmark. Evaluation metrics are calculated for all buddy-benchmark combinations.
 
 4. Analysis
 
@@ -57,7 +57,7 @@ num_human_questions:           # (int) number of questions in the human evaluati
 ```
 
 ## Running a single evaluation
-While the research focussed on comparing human and synthetic benchmarks, the code also enables evaluation using only one benchmark, synthetic or human. For an example, see the [single evaluation example](https://github.com/JonasElburgUVA/Can-we-evaluate-RAGs-with-synthetic-data/blob/main/Experiments/example.ipynb) notebook.
+While the research focussed on comparing human and synthetic benchmarks, the code also enables evaluation using only one benchmark, synthetic or human. For an example, see the [single evaluation example](https://github.com/JonasElburgUVA/Can-we-evaluate-RAGs-with-synthetic-data/blob/master/Experiments/example.ipynb) notebook.
 
 ## Environment variables
 The following environment variables are *required* for the code to work:
